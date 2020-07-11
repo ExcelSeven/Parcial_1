@@ -28,9 +28,9 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 
 function challenge1(){
   buttonNum = prompt("Cuantos botones quieres?", "")
-  buttons = document.getElementByID("dummy")
+  buttons = document.getElementById('dummy')
   for (i = 0; i < buttonNum; i++) {
-	  btn = document.CreateElement("button")
+	  btn = document.createElement("button");
 	  btn.innerHTML = nombres[i]
 	  document.body.appendChild(btn, dummy)
   }
@@ -80,7 +80,7 @@ Deberia escribir en consola
 
 // CREA TU FUNCION printInfo() AQUI
 
-function challenge2(){
+function challenge3(){
   function Dog(nombre, color, raza){
   	  this.nombre = nombre
 	  this.color = color
@@ -89,7 +89,6 @@ function challenge2(){
   var Fido = new Dog("Fido", "Negro", "Poodle")
   var Cafe = new Dog("Cafe", "Blanco", "Corgi")
   var Poodle = new Dog("Poodle", "Negro", "Labrador")
-
 }
 
 </script>
@@ -100,7 +99,7 @@ function challenge2(){
 
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
-    <button onclick="challenge3()">Challenge 2</button>
+    <button onclick="challenge3()">Challenge 3</button>
 
   
 <div id = "dummy">
